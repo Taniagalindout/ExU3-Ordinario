@@ -11,10 +11,20 @@ namespace ExamenU3
         public ApplicationDbContext( DbContextOptions<ApplicationDbContext> options) : base(options){
 
         }
+         public DbSet<Categories>? Categories {get; set;}
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Categories>().HasData(
+                new Categories()
+                {
+                    Id = 1,
+                    Nombre = "Electrodómesticos",
+                    FechaCreacion = new DateTime(),
+                    FechaActualizacion = new DateTime()
+                }
+            );
         }
     }
 }
