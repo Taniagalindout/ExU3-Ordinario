@@ -1,0 +1,7 @@
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.csproj.AssemblyReference.cache
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.AssemblyInfoInputs.cache
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.AssemblyInfo.cs
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.csproj.CoreCompileInputs.cache
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\CA3\Documents\Samuel Cano\ExamenU3\ExU3-Ordinario\ExamenU3\obj\Debug\net7.0\ExamenU3.MvcApplicationPartsAssemblyInfo.cache
