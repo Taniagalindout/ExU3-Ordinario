@@ -1478,11 +1478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ExamenU3\\ExU3-Ordinario\\ExamenU3\\ExamenU3.csproj",
+      "projectUniqueName": "C:\\Users\\CA3\\Documents\\LB-9B\\Desarrollo Web Integral\\ExamenU3-9B\\ExU3-Ordinario\\ExamenU3\\ExamenU3.csproj",
       "projectName": "ExamenU3",
-      "projectPath": "C:\\ExamenU3\\ExU3-Ordinario\\ExamenU3\\ExamenU3.csproj",
+      "projectPath": "C:\\Users\\CA3\\Documents\\LB-9B\\Desarrollo Web Integral\\ExamenU3-9B\\ExU3-Ordinario\\ExamenU3\\ExamenU3.csproj",
       "packagesPath": "C:\\Users\\CA3\\.nuget\\packages\\",
-      "outputPath": "C:\\ExamenU3\\ExU3-Ordinario\\ExamenU3\\obj\\",
+      "outputPath": "C:\\Users\\CA3\\Documents\\LB-9B\\Desarrollo Web Integral\\ExamenU3-9B\\ExU3-Ordinario\\ExamenU3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CA3\\AppData\\Roaming\\NuGet\\NuGet.Config"
