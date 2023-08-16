@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vKeknFlqcrbcGATpi2pok2SvI5KKA8MtKErcz+kg/UE/RKx3kO3jtaQ8m5NK3rSbv1AWJf2sjbP1PW6l4BOXNA==",
+  "dgSpecHash": "/8l5Zh98kBRyMNRBdkYCk7t9C4ED1zKpG9nShnllAsziXLfgQ4TpiXAQ1j08etGbPZ7EEPXierRXZUwi2yJMkA==",
   "success": true,
-  "projectFilePath": "C:\\ExamenU3\\ExU3-Ordinario\\ExamenU3\\ExamenU3.csproj",
+  "projectFilePath": "C:\\ExU3-Ordinario\\ExamenU3\\ExamenU3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CA3\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\CA3\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

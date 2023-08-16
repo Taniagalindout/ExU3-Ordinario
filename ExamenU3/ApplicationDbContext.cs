@@ -12,6 +12,8 @@ namespace ExamenU3
 
         }
          public DbSet<Categories>? Categories {get; set;}
+         public DbSet<Customer>? Customer {get; set;}
+         public DbSet<Product>? Products {get; set;}
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,6 +27,28 @@ namespace ExamenU3
                     FechaActualizacion = new DateTime()
                 }
             );
+               modelBuilder.Entity<Customer>().HasData(
+                new Customer()
+                {
+                    Id = 1,
+                    Nombre = "Samuel",
+                    Apellidos = "Samuel",
+                    RFC = "KAKSJKHSA",
+                    CorreoElectronico = "HOLA@UTEZ",
+                    Telefono = "1234567890"
+
+                }
+            );
+
+             modelBuilder.Entity<Product>().HasData(
+                new Product(){
+                    Id = 1,
+                    Nombre = "TestName" ,
+                    Descripcion = "TestDescription",
+                    Precio = 100,
+                    Cantidad = 5
+                }
+            );
         }
     }
 }

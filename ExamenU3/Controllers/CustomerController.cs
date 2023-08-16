@@ -11,10 +11,10 @@ namespace ExamenU3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriesController : ControllerBase
+    public class CustomerController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        public CategoriesController(ApplicationDbContext context)
+        public CustomerController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -23,23 +23,23 @@ namespace ExamenU3.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var listCategories = await _context.Categories.ToListAsync();
-            if (listCategories == null || listCategories.Count == 0)
+            var listCustomers = await _context.Customer.ToListAsync();
+            if (listCustomers == null || listCustomers.Count == 0)
             {
                 return NoContent();
 
             }
-            return Ok(listCategories);
+            return Ok(listCustomers);
         }
 
         [HttpPost("Store")]
-        public async Task<HttpStatusCode> Store([FromBody] Categories categories)
+        public async Task<HttpStatusCode> Store([FromBody] Customer customer)
         {
-            if (categories == null)
+            if (customer == null)
             {
                 return HttpStatusCode.BadRequest;
             }
-            _context.Add(categories);
+            _context.Add(customer);
             await _context.SaveChangesAsync();
             return HttpStatusCode.Created;
         }
@@ -47,41 +47,42 @@ namespace ExamenU3.Controllers
         [HttpGet("Show")]
         public async Task<IActionResult> Show(int id)
         {
-            var categories = await _context.Categories.FindAsync(id);
-            if (categories == null)
+            var customer = await _context.Customer.FindAsync(id);
+            if (customer == null)
             {
                 return NotFound();
             }
-            return Ok(categories);
+            return Ok(customer);
         }
 
         [HttpDelete("Destroy")]
         public async Task<IActionResult> Destroy(int id)
         {
-            var categories = await _context.Categories.FindAsync(id);
+            var customer = await _context.Customer.FindAsync(id);
 
-            if (categories == null)
+            if (customer == null)
             {
                 return NotFound();
             }
-            _context.Categories.Remove(categories);
+            _context.Customer.Remove(customer);
             await _context.SaveChangesAsync();
             return Ok();
         }
 
         [HttpPut("Update")]
-        public async Task<IActionResult> Update(int id,[FromBody] Categories categories){
-            if(categories==null || categories.Id !=id){
+        public async Task<IActionResult> Update(int id,[FromBody] Customer customer){
+            if(customer==null || customer.Id !=id){
                 return BadRequest();
             }
-            var entity = await _context.Categories.FindAsync(id);
+            var entity = await _context.Customer.FindAsync(id);
             if(entity==null){
                 return NotFound();
             }
-            entity.Nombre = categories.Nombre;
-            entity.FechaCreacion = categories.FechaCreacion;
-            entity.FechaActualizacion = categories.FechaActualizacion;
-
+            entity.Nombre = customer.Nombre;
+            entity.Apellidos = customer.Apellidos;
+            entity.RFC = customer.RFC;
+            entity.CorreoElectronico = customer.CorreoElectronico;
+            entity.Telefono = customer.Telefono;
             await _context.SaveChangesAsync();
             return Ok();
         }
